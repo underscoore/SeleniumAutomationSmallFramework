@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CorssBrowserTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegressionOnChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.test.advance.ReadingCSSFromDOMTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="getTheProductTitleCSSProperties"/>
+        </methods>
+      </class> <!-- com.test.advance.ReadingCSSFromDOMTest -->
+      <class name="com.test.advance.RunJSinSelenium">
+        <methods>
+          <include name="afterTest"/>
+          <include name="runJsinSelenium"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.test.advance.RunJSinSelenium -->
+    </classes>
+  </test> <!-- RegressionOnChrome(failed) -->
+  <test thread-count="5" name="RegressionOnFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.test.advance.ReadingCSSFromDOMTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="getTheProductTitleCSSProperties"/>
+        </methods>
+      </class> <!-- com.test.advance.ReadingCSSFromDOMTest -->
+      <class name="com.test.advance.RunJSinSelenium">
+        <methods>
+          <include name="afterTest"/>
+          <include name="runJsinSelenium"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.test.advance.RunJSinSelenium -->
+    </classes>
+  </test> <!-- RegressionOnFirefox(failed) -->
+</suite> <!-- Failed suite [CorssBrowserTesting] -->
