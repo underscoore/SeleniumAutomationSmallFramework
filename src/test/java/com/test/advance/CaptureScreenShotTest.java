@@ -33,7 +33,7 @@ public class CaptureScreenShotTest extends BaseClass {
 		try {
 			FileHandler.copy(screenshot, new File("./target/" + unique + "SS-screenshot.png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 	}
